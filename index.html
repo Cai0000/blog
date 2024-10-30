@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <title>{{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .hero-section {
+            background-image: url('_post/pictures/index_pic.webp'); /* 替换为图片 URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            width: 100%;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-text h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .welcome-text p {
+            font-size: 1.3em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome!!!</h1>
-    <p>{{ site.description }}</p>
+    <div class="hero-section">
+        <!-- Navigator -->
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+            <h1>Welcome to my blog</h1>
+            <p>A journey of discovery, sharing and growth</p>
+        </div>
+    </div>
 </body>
 </html>
